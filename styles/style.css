@@ -1,3 +1,11 @@
 /* Poppins font   */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap')
 /* poppins font  */
+<span class="border-x-[1px] border-dashed bg-[#1DD100]"></span>
+<div class="">
+ <img src="./images/fare.png" alt="">
+ <p class="text-xl font-bold mt-1">550Take</p>
+ <p class="text-sm opacity-65 ">Per Seat</p>
+
+
+ flex lg:flex-row flex-col  justify-evenly 
