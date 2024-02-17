@@ -11,11 +11,133 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <header>
+<body class="font-poppins">
+    <header class=" lg:px-16 lg:py-7 p-2"> 
+        <!-- navbar start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Destination</li>
+                  <li>Search</li>
+                </ul>
+              </div>
+              <h1 class="text-3xl font-extrabold font-poppins">P-Ticket</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 gap-6 text-gray-500 font-normal">
+                <li>Home</li>
+                  <li>About</li>
+                  <li>Destination</li>
+                  <li>Search</li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#00d1463c] text-[#1DD100] border-[1px] border-[#1cd1005d]">Bus <img src="./images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+        <!-- navbar end  -->
 
+
+          <!-- banner  -->
+           <!-- <div class="mx-auto lg:mt-7 lg:p-4 p-2  relative">
+            <img class="w-full" src="./images/banner.png" alt="">
+            <div id="hidden" class="flex justify-around lg:flex-row gap-2 ">
+                 Users 
+                <div class="w-[20%] flex justify-evenly border-b-4 border-[#1DD100] shadow-sm bg-slate-100 p-3 rounded-lg absolute top-[78%] left-[15%]">
+                 <img src="./images/people.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-extrabold">500+</h1>
+                    <p>Registered Users</p>
+                </div>
+                </div>
+                Ticket 
+                <div class="w-[20%] flex justify-evenly border-b-4 border-[#1DD100] shadow-sm bg-slate-100 p-3 rounded-lg absolute top-[78%] ">
+                 <img src="./images/ticket-cupon.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-extrabold">1.7 Lacks</h1>
+                    <p>Tickets Sold</p>
+                </div>
+                </div>
+                Partners 
+                <div class="w-[20%] flex justify-evenly border-b-4 border-[#1DD100] shadow-sm bg-slate-100 p-3 rounded-lg absolute top-[78%] right-[15%]">
+                 <img src="./images/bus-logo.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-extrabold">80K+</h1>
+                    <p>Rental partners</p>
+                </div>
+                </div>
+
+            </div>
+          </div>   -->
+           
+          
+          <div>
+            <div class="hero min-h-screen ">
+                <img class="w-full" src="./images/banner.png" alt="">
+                <div class="hero-content text-center">
+                    
+                  <div class="">
+                    <h1 class="lg:text-6xl text-3xl font-bold text-white mb-2">End-to-End Travel with</h1>
+                    <p class="lg:text-6xl text-3xl text-[#1DD100] font-bold mb-2"> P Paribahan</p>
+                    <p class="lg:text-base text-sm text-center text-white opacity-70 mb-2">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined </p>
+                    <button class="btn bg-[#1DD100] border-none text-xl p-2">Buy Ticket</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- banner  -->
     </header>
     <main>
+        <!-- Best offers  -->
+        <section class="lg:px-16 lg:py-7 p-2">
+            <h1 class="lg:mt-7 lg:text-4xl text-2xl text-center font-bold">Best offer for you</h1>
+           <div class="flex flex-col lg:flex-row justify-evenly gap-3 lg:mt-4 lg:px-7 px-10">
+            <!-- 1st coupon  -->
+            <div class="flex gap-8 bg-[#FFBF0F] p-10 rounded-xl mt-10">
+             <div>
+                <h1 class="text-3xl font-bold text-slate-800">15% Off</h1>
+             <p class="font-semibold">on your next purchase</p>
+             <p class="opacity-70">use by January 2024</p>
+             </div>
+             <span class="border-x-[1px] border-dashed"></span>
+             <div>
+                <h4 class="text-2xl font-semibold">NEW15</h4>
+                <p class="opacity-70">Coupon Code </p>
+             </div>
+            </div>
+            <!-- 2nd coupon  -->
+            <div class="flex gap-8 bg-[#F78C9C] p-10 rounded-xl mt-10">
+                <div>
+                   <h1 class="text-3xl font-bold text-slate-800">20% Off</h1>
+                <p class="font-semibold">on your next purchase</p>
+                <p class="opacity-70">use by January 2024</p>
+                </div>
+                <span class="border-x-[1px] border-dashed"></span>
+                <div>
+                   <h4 class="text-2xl font-semibold">Couple 20</h4>
+                   <p class="opacity-70">Coupon Code </p>
+                </div>
+               </div>
+               
+           </div>
+          <div class="flex justify-center items-center  lg:mt-8 mt-4">
+            <button class="btn sm:btn-sm md:btn-md lg:btn-lg text-[#1DD100] border-[1px] border-[#1DD100] ">See All Offers</button>
+          </div>
+           
+
+        </section>
+
+        <!-- form section  -->
+        <section class="bg-slate-100 mt-16">
+            <h1 class="text-4xl font-semibold text-center">P.H Paribahan</h1>
+
+        </section>
 
     </main>
 
