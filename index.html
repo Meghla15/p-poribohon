@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class=" ">
-                        <button class="btn btn-lg text-[#1DD100] border-[1px] border-[#1DD100]"><img src="./images/seat-green.png" alt=""><span>16</span>Seats left</button>
+                        <button class="btn btn-lg text-[#1DD100] border-[1px] border-[#1DD100]"><img src="./images/seat-green.png" alt=""><span id="current-seat">16</span>Seats left</button>
                    </div>
                    </div>
                  <div class="bg-slate-50 mt-4 rounded-2xl p-3">
@@ -182,7 +182,7 @@
                 <button class="btn mt-2"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
               </div>
               <div>
-                <div class=" ">
+                
                    <!-- ...... -->
                    <div class="bus-ticket">
                     <div id="bus-seats" class="flex lg:flex-row flex-col justify-between">
@@ -261,7 +261,7 @@
                    </div>
                
                    <!-- Next Button -->
-                   <button onclick="nextBtn()" class="mt-6 p-3 bg-[#1DD100] text-white rounded-md w-full">Next</button>
+                   <a href="#confirmation"><button onclick="nextBtn()" class="mt-6 p-3 bg-[#1DD100] text-white rounded-md w-full">Next</button></a>
                    <a href="">Terms and Conditions</a>
                    
                    <a href="">Cancellation Policy</a>
@@ -308,7 +308,7 @@
 
 
     <!-- confirm section  -->
-    <section  id="confirmation" class="hidden">
+    <section  id="confirmation" class="">
      
       <div>
         <div class="hero min-h-screen bg-base-200">
