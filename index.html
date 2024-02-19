@@ -75,7 +75,7 @@
              </div>
              <span class="border-x-[1px] border-dashed"></span>
              <div>
-                <h4 class="text-2xl font-semibold">NEW15</h4>
+                <h4 id="new15" class="text-2xl font-semibold">NEW15</h4>
                 <p class="opacity-70">Coupon Code </p>
              </div>
             </div>
@@ -101,7 +101,7 @@
 
         </section>
 
-        <!-- form section  -->
+        <!-- form section start  -->
         <section class="bg-slate-100 rounded-3xl mt-16 lg:py-20 py-7">
             <h1 class="text-4xl font-semibold text-center">P.H Paribahan</h1>
             <p class="lg:w-1/3 w-2/3 mx-auto mt-3 text-sm text-center text-slate-500 opacity-70 mb-2">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
@@ -145,13 +145,13 @@
                  <span class="border-[1px] border-y-2 border-dotted bg-[#1DD100]"></span>
                  <div class="mt-14 py-2"> 
                     <img src="./images/fare.png" alt="">
-                    <p class="text-xl font-semibold text-center">550 Taka</p>
+                    <p id="price" class="text-xl font-semibold text-center">550 Taka</p>
                     <p class="opacity-65">Per Person</p>
                     
                    </div>
                  </div>
                 </div>
-                <!-- form section  -->
+                <!-- form section end -->
                 
             
                   
@@ -174,54 +174,46 @@
                    <div class="flex mt-2 gap-2">
                     <img src="./images/seat-green-filled.png" alt="">
                     <p class="opacity-65 ">Selected</p>
+                   
                    </div>
+            
                </div> 
                <div class="card-actions justify-start">
                 <button class="btn mt-2"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
               </div>
               <div>
-                <div class="flex lg:flex-row flex-col justify-around ">
-                   
-                    <div class="flex gap-3">
-                        <div  class=" grid grid-cols-1 gap-2">
-                            <P class="lg:text-xl text-lg  p-2">A</P>
-                            <P class="lg:text-xl text-lg  p-2">B</P>
-                            <P class="lg:text-xl text-lg  p-2">C</P>
-                            <P class="lg:text-xl text-lg  p-2">D</P>
-                           
-                    </div>
-                        <div class=" grid grid-cols-1 gap-2  ">
-                          
-                        <button class="btn all-btn">A1</button>
-                        <button class="btn all-btn">B1</button>
-                        <button class="btn all-btn">C1</button>
-                        <button class="btn all-btn">D1</button>
+                <div class=" ">
+                   <!-- ...... -->
+                   <div class="bus-ticket">
+                    <div id="bus-seats" class="flex lg:flex-row flex-col justify-between">
+                       
+                        <div id="seats-container">
                         
-                        </div>
-                        <div class=" grid grid-cols-1 gap-2 mr-4">
-                            <button class="btn all-btn">A2</button>
-                            <button class="btn all-btn">B2</button>
-                            <button class="btn all-btn">C2</button>
-                            <button class="btn all-btn">D2</button>
-                           
-                          </div>
-                          <div class=" grid grid-cols-1 gap-2">
-                            <button class="btn all-btn">A3</button>
-                            <button class="btn all-btn">B3</button>
-                            <button class="btn all-btn">C3</button>
-                            <button class="btn all-btn">D3</button>
-                          
-                          </div>
-                          <div class="grid grid-cols-1 gap-2">
-                            <button class="btn all-btn">A4</button>
-                            <button class="btn all-btn">B4</button>
-                            <button class="btn all-btn">C4</button>
-                            <button class="btn all-btn">D4</button>
-                           
-                          </div>
-                </div>
-                <span class="border-[1px] border-dotted bg-slate-100"></span>
-                <div class="box" id="box3">
+                            <div  class="seat">A1</div>
+                            <div  class="seat">A2</div>
+                            <div  class="seat">A3</div>
+                            <div  class="seat">A4</div>
+                    
+                            <div  class="seat">B1</div>
+                            <div  class="seat">B2</div>
+                            <div  class="seat">B3</div>
+                            <div  class="seat">B4</div>
+                    
+                            <div  class="seat">C1</div>
+                            <div  class="seat">C2</div>
+                            <div  class="seat">C3</div>
+                            <div  class="seat">C4</div>
+                    
+                            <div  class="seat">D1</div>
+                            <div  class="seat">D2</div>
+                            <div   class="seat">D3</div>
+                            <div  class="seat">D4</div>
+                      </div>
+                      <div id="selected-seats">
+                       
+                        
+                        
+                 <div class="box" id="box3">
             
                    <div class="bg-slate-100 lg:mt-0 mt-3  lg:p-8 p-3 rounded-2xl">
                     <div class="flex justify-between font-semibold">
@@ -231,25 +223,29 @@
                     </div>
                     <hr>
                     <br>
-                    
+                    <ul id="selected-seats-container"></ul>
                     <hr>
-                     <!-- Total Price and Passenger Information -->
+                    <div>
+                       <!-- Total Price -->
                    <div class="mt-8 flex justify-between">
                     <p class="text-lg font-semibold">Total Price</p>
-                   <p class="text-gray-600">BDT <span>0</span></p>
+                   <p class="text-gray-600">BDT <span  id="total-price">0</span></p>
                    </div>
    
                    <!-- Coupon Section -->
                    <div class="join mt-2  ">
-                       <input class="input border-[1px] border-gray-100 join-item" placeholder="Have any coupons?"/>
-                       <button class="btn join-item rounded-2xl bg-[#1DD100]">Apply</button>
+                       <input id="coupon-code"  class="input border-[1px] border-gray-100 join-item" placeholder="Have any coupons?"/>
+                       <div class="coupon-section">
+                        <button onclick="applyCoupon()" id="apply-btn" class="btn join-item rounded-2xl bg-[#1DD100]">Apply</button>
+                       </div>
                      </div>
                      <!-- Grand price  -->
                      <div class="mt-4 flex justify-between">
                         <p class="text-lg font-semibold">Grand Price</p>
-                       <p class="text-gray-600">BDT <span>0</span></p>
+                       <p class="text-gray-600">BDT <span id="grand-price">0</span></p>
                        </div>
                    </div>
+                    </div>
                      
                
                    <!-- Passenger Information -->
@@ -272,9 +268,11 @@
                   </div>
                 </div>
               </div>
-              </div>
-             </div>
-                      
+
+                </div>
+
+                   
+                 <!-- ......      -->
             </div>
             </div>
         </section>
@@ -310,7 +308,7 @@
 
 
     <!-- confirm section  -->
-    <section class="hidden">
+    <section  id="confirmation" class="hidden">
      
       <div>
         <div class="hero min-h-screen bg-base-200">
