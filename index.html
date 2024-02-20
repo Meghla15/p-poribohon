@@ -13,7 +13,7 @@
     
 </head>
 <body class="">
-    <header id=" home-section" class=" lg:px-16 lg:py-7 p-2 "> 
+    <header id="" class=" lg:px-16 lg:py-7 p-2 home-section "> 
         <!-- navbar start -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -61,7 +61,7 @@
           </div>
           <!-- banner end  -->
     </header>
-    <main class=" home-section ">
+    <main class="home-section ">
         <!-- Best offers  -->
         <section class="lg:px-16 lg:py-7 p-2">
             <h1 class="lg:mt-7 lg:text-4xl text-2xl text-center font-bold">Best offer for you</h1>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class=" ">
-                        <button class="btn btn-lg text-[#1DD100] border-[1px] border-[#1DD100]"><img src="./images/seat-green.png" alt=""><span id="current-seat">16</span>Seats left</button>
+                        <button class="btn btn-lg text-[#1DD100] border-[1px] border-[#1DD100]"><img src="./images/seat-green.png" alt=""><span>16</span>Seats left</button>
                    </div>
                    </div>
                  <div class="bg-slate-50 mt-4 rounded-2xl p-3">
@@ -182,8 +182,7 @@
                 <button class="btn mt-2"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
               </div>
               <div>
-                
-                   <!-- ...... -->
+                <div>
                    <div class="bus-ticket">
                     <div id="bus-seats" class="flex lg:flex-row flex-col justify-between">
                        
@@ -209,6 +208,10 @@
                             <div   class="seat">D3</div>
                             <div  class="seat">D4</div>
                       </div>
+
+
+
+
                       <div id="selected-seats">
                        
                         
@@ -231,14 +234,14 @@
                     <p class="text-lg font-semibold">Total Price</p>
                    <p class="text-gray-600">BDT <span  id="total-price">0</span></p>
                    </div>
-   
-                   <!-- Coupon Section -->
-                   <div class="join mt-2  ">
-                       <input id="coupon-code"  class="input border-[1px] border-gray-100 join-item" placeholder="Have any coupons?"/>
-                       <div class="coupon-section">
-                        <button onclick="applyCoupon()" id="apply-btn" class="btn join-item rounded-2xl bg-[#1DD100]">Apply</button>
-                       </div>
-                     </div>
+
+
+                    <div id="coupon-section">
+                      <input type="text" class="input border-[1px] border-gray-100 join-item" id="coupon-code" placeholder="Enter coupon code">
+                      <button onclick="applyCoupon()" class="btn join-item rounded-2xl bg-[#1DD100]">Apply Coupon</button>
+                    </div>
+                    
+
                      <!-- Grand price  -->
                      <div class="mt-4 flex justify-between">
                         <p class="text-lg font-semibold">Grand Price</p>
@@ -272,13 +275,13 @@
                 </div>
 
                    
-                 <!-- ......      -->
+              
             </div>
-            </div>
+            </div> 
         </section>
     </main>
 
-    <footer class=" home-section ">
+    <footer class="home-section">
         <footer class="footer p-10 bg-neutral text-neutral-contentn bg-[#030712] lg:px-36 ">
             <aside>
               <h1 class="text-2xl font-semibold text-white">P-Ticket</h1>
@@ -308,7 +311,7 @@
 
 
     <!-- confirm section  -->
-    <section  id="confirmation" class="">
+    <section  id="confirmation">
      
       <div>
         <div class="hero min-h-screen bg-base-200">

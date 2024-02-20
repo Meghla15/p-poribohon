@@ -1,23 +1,25 @@
 // For Coupon Code
 function applyCoupon() {
-   if (!couponApplied) {
-     const couponCodeInput = document.getElementById('coupon-code');
-     const couponCode = couponCodeInput.value.trim().toUpperCase();
-     if (couponCode === "NEW15" || couponCode === "Couple 20") {
-       const grandPriceElement = document.getElementById('grand-price');
-       let grandPrice = parseInt(grandPriceElement.innerText);
-       grandPrice -= 100;
-       grandPriceElement.innerText = grandPrice + ' BDT';
-       document.getElementById('coupon-section').style.display = 'none';
-       couponApplied = true;
-     } else {
-       alert('Invalid coupon code. Please enter a valid one.');
-     }
-   } else {
-     alert('Coupon has already been applied.');
-   }
- }
+  if (!couponApplied) {
+    const couponCodeInput = document.getElementById('coupon-code');
+    const couponCode = couponCodeInput.value.trim().toUpperCase();
+    if (couponCode === "NEW15" || couponCode === "COUPLE20") {
+      const grandPriceElement = document.getElementById('grand-price');
+      let grandPrice = parseInt(grandPriceElement.innerText);
+      grandPrice /= 0.15;
+      grandPriceElement.innerText = grandPrice + ' BDT';
+      document.getElementById('coupon-section').style.display = 'none';
+      couponApplied = true;
+    } else {
+      alert('Invalid coupon code. Please enter a valid one.');
+    }
+  } else {
+    alert('Coupon has already been applied.');
+  }
+}
  
+
+
 
 //  For Seat;
 let count = 0;
@@ -38,7 +40,7 @@ for (const btn of allBtn) {
         const selectedContainer = document.getElementById("selected-seats-container");
         const li = document.createElement('li');
         const p = document.createElement('p');
-        p.innerText = seatName + " ______ " + "economy" + "  ______ " + "550";
+        p.innerText = seatName + " ________________ " + "economy" + "  ________________ " + "550";
 
         li.appendChild(p);
         selectedContainer.appendChild(li);
@@ -69,14 +71,15 @@ function setInnerText(elementId, value) {
   document.getElementById(elementId).innerText = value;
 }
 
-   function nextBtn() {
-      const homeSection = document.getElementsByClassName('home -section');
+ 
+   
+   
+function nextBtn() {
+      
       const phoneNumberInput = document.getElementById("phone");
       const phoneNumber = phoneNumberInput.value;
 
-      
-
-
+    
       if (phoneNumber.length !== 10 || isNaN(phoneNumber)) {
           alert("Please enter a valid 10-digit phone number.");
           return ;
